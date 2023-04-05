@@ -1,4 +1,4 @@
-let movieNameRef = document.getElementById("movie-name");
+let movieNameRef = document.getElementById("name");
 let searchBtn = document.getElementById("search-btn");
 let result = document.getElementById("result");
 
@@ -49,3 +49,4 @@ let getMovie = () => {
 
 searchBtn.addEventListener("click", getMovie);
 window.addEventListener("load", getMovie);
+
