@@ -1,6 +1,7 @@
 let movieNameRef = document.getElementById("name");
 let searchBtn = document.getElementById("search-btn");
 let result = document.getElementById("result");
+let input = document.getElementById("name");
 
 let getMovie = () => {
     let movieName = movieNameRef.value;
@@ -47,6 +48,12 @@ let getMovie = () => {
     }
 };
 
+input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("search-btn").click();
+    }
+});
 searchBtn.addEventListener("click", getMovie);
 window.addEventListener("load", getMovie);
 
