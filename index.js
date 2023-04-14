@@ -54,6 +54,7 @@ input.addEventListener("keypress", function(event) {
         document.getElementById("search-btn").click();
     }
 });
+
 searchBtn.addEventListener("click", getMovie);
 window.addEventListener("load", getMovie);
 

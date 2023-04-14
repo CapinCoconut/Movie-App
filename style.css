@@ -24,6 +24,13 @@ body{
     left: 50%;
     border-radius: 0.4em;
     box-shadow: 1.2em 2em 3em black;
+    animation-name: container;
+    animation-duration: 2s;
+}
+
+@keyframes container {
+    from { background-color: #202d41; }
+    to { background-color: #6d0bdd; }
 }
 
 .search-container{
